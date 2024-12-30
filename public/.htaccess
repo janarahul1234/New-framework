@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+    # Protect .env and other sensitive files
+    <FilesMatch "^\.">
+        Require all denied
+    </FilesMatch>
+    
+    RewriteEngine On
+
+    # Check if the request is for a valid file or directory
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Redirect to index.php for all other requests
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>

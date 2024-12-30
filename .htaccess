@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # RewriteCond %{HTTPS} off
+	# RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    # RewriteCond %{HTTP:CF-Visitor} !{"scheme":"https"}
+    # RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Redirect all requests to the public directory
+    RewriteRule ^$ public/ [L]
+    RewriteRule (.*) public/$1 [L]
+</IfModule>

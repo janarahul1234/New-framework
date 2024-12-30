@@ -1,0 +1,19 @@
+{
+    "name": "rahuljana/new-framework",
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core/",
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rahul Jana",
+            "email": "janarahul1234@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5",
+        "twig/twig": "^3.17"
+    }
+}
