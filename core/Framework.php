@@ -16,20 +16,27 @@ class Framework
         $this->handleErrors();
 
         $this->corsMiddleware();
-
+    
         $this->loadRoutes();
-
+        
         $this->router = new Router();
+    }
+
+    private function loadRoute(string $path, string $prefix = ''): void
+    {
+        Route::group(['prefix' => $prefix], function () use ($path) {
+            require_once ROOT_DIR . $path;
+        });
     }
 
     private function loadRoutes(): void
     {
-        require_once ROOT_DIR . '/routes/web.php';
+        $this->loadRoute('/routes/web.php');
+        $this->loadRoute('/routes/api.php', '/api');
     }
 
     public function run(): void
     {
-        // Resolve and handle the request
         echo $this->router->resolve();
     }
 
@@ -62,3 +69,5 @@ class Framework
         register_shutdown_function([$this->errorHandler, 'handleShutdown']);
     }
 }
+
+// EOF

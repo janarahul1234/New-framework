@@ -49,7 +49,8 @@ class Router
         $matchingRoutes = [];
         foreach ($this->routes as &$route) {
             $route['params'] = [];
-            $pattern = preg_replace('/{(\w+)}/', '(\w+)', $route['path']);
+
+            $pattern = preg_replace('/{(\w+)}/', '(\w+)', rtrim($route['path'], '/'));
             $pattern = str_replace('/', '\/', $pattern);
 
             if (preg_match('/^' . $pattern . '$/', $url, $values)) {

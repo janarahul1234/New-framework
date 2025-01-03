@@ -8,9 +8,10 @@ use PDO;
 abstract class Model
 {
     protected ?PDO $db;
-    protected string $table;
+
+    protected $table;
+    protected $fillable = [];
     protected string $primaryKey = 'id';
-    protected array $fillable = [];
     protected array $attributes = [];
 
     public function __construct(array $attributes = [])
@@ -51,7 +52,7 @@ abstract class Model
         return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
-    private function first(array $conditions): ?object
+    private function whereFirst(array $conditions): ?object
     {
         $results = $this->where($conditions);
         return $results[0] ?? null;
