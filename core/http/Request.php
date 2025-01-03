@@ -22,7 +22,6 @@ class Request
 
         $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $url = '/' . trim(substr($uri, strlen($baseUrl)), '/');
-
         return $url ?: '/';
     }
 
@@ -69,7 +68,8 @@ class Request
 
     public function validate(array $rules): array
     {
-        $validation = new Validation(Database::connect());
+        $db = Database::connect();
+        $validation = new Validation($db);
         return $validation->validate($this->body, $rules);
     }
 

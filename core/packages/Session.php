@@ -23,7 +23,7 @@ class Session
 
     public function has(string $key): bool
     {
-        return isset($_SESSION[$key]);
+        return !empty($_SESSION[$key]);
     }
 
     public function remove(string $key): void

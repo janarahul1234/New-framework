@@ -16,17 +16,17 @@ class Framework
         $this->handleErrors();
 
         $this->corsMiddleware();
-    
         $this->loadRoutes();
-        
         $this->router = new Router();
     }
 
     private function loadRoute(string $path, string $prefix = ''): void
     {
-        Route::group(['prefix' => $prefix], function () use ($path) {
-            require_once ROOT_DIR . $path;
-        });
+        $file = ROOT_DIR . $path;
+        
+        if (file_exists($file)) {
+            Route::group(['prefix' => $prefix], fn() => require_once $file);
+        }
     }
 
     private function loadRoutes(): void

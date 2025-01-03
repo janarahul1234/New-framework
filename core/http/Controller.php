@@ -4,14 +4,10 @@ namespace Core\Http;
 
 abstract class Controller
 {
-    public function use(string $package): ?object
+    public function __call(string $name, array $args)
     {
-        $class = 'Core\\Packages\\' . ucfirst($package);
-        if (class_exists($class)) {
-            return new $class();
-        }
-        
-        return null;
+        $class = 'Core\\Packages\\' . ucfirst($name);
+        return class_exists($class) ? new $class() : null;
     }
 }
 
