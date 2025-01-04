@@ -1,14 +1,15 @@
-# New Framework Documentation
+# New Framework
 
-## Introduction
+Welcome to the New Framework! This is a PHP framework designed to be simple, flexible, and easy to use.
 
-Welcome to the New Framework! This framework is designed to be lightweight, flexible, and easy to use. It provides a solid foundation for building web applications with PHP.
+## Table of Contents
 
-## Requirements
-
-- PHP 8.0 or higher
-- Composer
-- MySQL or any other supported database
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Directory Structure](#directory-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Installation
 
@@ -27,134 +28,96 @@ Welcome to the New Framework! This framework is designed to be lightweight, flex
     composer install
     ```
 
-4. Copy the `.env.example` file to `.env` and configure your environment variables:
+4. Copy the `.env.example` file to `.env` and update the environment variables as needed:
     ```sh
     cp .env.example .env
     ```
-5. Start the development server:
+
+5. Generate the application key:
+    ```sh
+    php artisan key:generate
+    ```
+
+6. Start the development server:
     ```sh
     php -S localhost:8000 -t public
     ```
 
-## Directory Structure
+## Configuration
 
-- `app/`: Contains the application code (controllers, models, views).
-- `config/`: Configuration files.
-- `core/`: Core framework files.
-- `public/`: Publicly accessible files (index.php, assets).
-- `routes/`: Route definitions.
-- `storage/`: Logs, cache, and other storage files.
-- `vendor/`: Composer dependencies.
+The configuration files are located in the `config` directory. Update these files as needed to configure your application.
 
-## Basic Usage
+## Usage
 
 ### Routing
 
-Define your routes in the `routes/web.php` file. Here is an example:
-
+Define your routes in the `routes/web.php` file. For example:
 ```php
 use Core\Route;
 
-Route::get('/', [App\Controllers\HomeController::class, 'index']);
-Route::post('/todos', [App\Controllers\TodoController::class, 'store']);
+Route::get('/', function () {
+    return view('welcome');
+});
 ```
 
 ### Controllers
 
-Create controllers in the `app/Controllers` directory. Here is an example of a `TodoController`:
-
-```php
-namespace App\Controllers;
-
-use Core\Http\Request;
-use Core\Http\Response;
-use App\Models\Todo;
-
-class TodoController
-{
-    public function index(Request $request): Response
-    {
-        $todos = Todo::all();
-        return view('todos', ['todos' => $todos]);
-    }
-
-    public function store(Request $request): Response
-    {
-        $data = $request->body();
-        Todo::create($data);
-        return redirect('/todos');
-    }
-}
-```
-
-### Models
-
-Create models in the `app/Models` directory. Here is an example of a `Todo` model:
-
-```php
-namespace App\Models;
-
-use Core\Model;
-
-class Todo extends Model
-{
-    protected string $table = 'todos';
-    protected array $fillable = ['title', 'completed'];
-}
-```
+Create controllers in the `app/Controllers` directory. Extend the `Core\Http\Controller` class to create a new controller.
 
 ### Views
 
-Create views in the `app/views` directory. Here is an example of a `todos.twig` view:
+Views are stored in the `app/views` directory. Use the Blade templating engine to create your views.
 
-```twig
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todos</title>
-</head>
-<body>
-    <h1>Todos</h1>
-    <ul>
-        {% for todo in todos %}
-            <li>{{ todo.title }} - {{ todo.completed ? 'Completed' : 'Pending' }}</li>
-        {% endfor %}
-    </ul>
-</body>
-</html>
-```
+### Middleware
 
-### Environment Configuration
+Middleware can be defined and applied to routes to handle requests before they reach the controller.
 
-Configure your environment variables in the `.env` file. Here is an example:
+## Directory Structure
 
 ```
-APP_ENV=local
-APP_DEBUG=true
-APP_URL=http://localhost
-
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=new_framework
-DB_USERNAME=root
-DB_PASSWORD=
+new-framework/
+├── app/
+│   ├── Controllers/
+│   ├── views/
+│   └── ...
+├── config/
+│   ├── cors.php
+│   ├── database.php
+│   └── ...
+├── core/
+│   ├── Http/
+│   ├── packages/
+│   ├── Database.php
+│   ├── ErrorHandler.php
+│   ├── Framework.php
+│   ├── functions.php
+│   ├── Model.php
+│   ├── Route.php
+│   ├── Router.php
+│   └── View.php
+├── public/
+│   ├── .htaccess
+│   ├── index.php
+│   └── ...
+├── routes/
+│   ├── web.php
+│   ├── api.php
+│   └── ...
+├── storage/
+│   ├── logs/
+│   └── ...
+├── .env
+├── .env.example
+├── .gitignore
+├── composer.json
+├── composer.lock
+└── README.md
 ```
 
-## Error Handling
+## Contributing
 
-The framework provides a custom error handler that captures and logs errors. You can find the error handler in `core/ErrorHandler.php`.
+Contributions are welcome! Please fork the repository and submit a pull request.
 
-## Middleware
+## License
 
-You can add middleware to your routes by using the `middleware` method. Here is an example:
-
-```php
-Route::get('/admin', [App\Controllers\AdminController::class, 'index'])->middleware('auth');
-```
-
-## Conclusion
-
-This documentation provides a basic introduction to the New Framework. For more detailed information, please refer to the source code and comments within the framework. Happy coding!
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
