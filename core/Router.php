@@ -9,48 +9,24 @@ class Router
 {
     private Request $request;
     private array $routes = [];
-    private static ?array $memoryCache = null;
 
     public function __construct()
     {
         $this->request = new Request();
         $this->routes = Route::getRoutes();
-
-        $cacheType = env('CACHE_TYPE', 'file');
-
-        if ($cacheType === 'memory') {
-            if (self::$memoryCache === null) {
-                self::$memoryCache = $this->routes;
-            } else {
-                $this->routes = self::$memoryCache;
-            }
-        } elseif ($cacheType === 'file') {
-            $cacheFile = ROOT_DIR . '/storage/cache/routes.cache';
-
-            if (file_exists($cacheFile)) {
-                $this->routes = unserialize(file_get_contents($cacheFile));
-            } else {
-                $this->saveCacheRoutesToFile($cacheFile);
-            }
-        }
-    }
-
-    private function saveCacheRoutesToFile(string $cacheFile): void
-    {
-        $cacheDir = dirname($cacheFile);
-        if (!is_dir($cacheDir)) {
-            mkdir($cacheDir, 0755, true);
-        }
-        file_put_contents($cacheFile, serialize($this->routes));
     }
 
     private function matchRoutes(string $url): ?array
     {
         $matchingRoutes = [];
+
         foreach ($this->routes as &$route) {
             $route['params'] = [];
 
-            $pattern = preg_replace('/{(\w+)}/', '(\w+)', rtrim($route['path'], '/'));
+            $routePath = rtrim($route['path'], '/');
+            $url = rtrim($url, '/');
+
+            $pattern = preg_replace('/{(\w+)}/', '(\w+)', $routePath);
             $pattern = str_replace('/', '\/', $pattern);
 
             if (preg_match('/^' . $pattern . '$/', $url, $values)) {

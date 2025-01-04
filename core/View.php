@@ -2,29 +2,24 @@
 
 namespace Core;
 
-use Twig\Environment;
-use Twig\Loader\FilesystemLoader;
+use eftec\bladeone\BladeOne;
 
 class View
 {
-    private Environment $twig;
+    private BladeOne $blade;
 
     public function __construct()
     {
-        $loader = new FilesystemLoader(ROOT_DIR . '/app/views');
-        $this->twig = new Environment($loader, [
-            'cache' => ROOT_DIR . '/storage/cache/twig',
-            'debug' => env('APP_DEBUG', false),
-        ]);
+        $views = ROOT_DIR . '/app/views';
+        $cache = sys_get_temp_dir();
 
-        if (env('APP_DEBUG', false)) {
-            $this->twig->addExtension(new \Twig\Extension\DebugExtension());
-        }
+        $mode = env('APP_DEBUG', false) ? BladeOne::MODE_DEBUG : BladeOne::MODE_AUTO;
+        $this->blade = new BladeOne($views, $cache, $mode);
     }
 
     public function render(string $template, array $data = []): string
     {
-        return $this->twig->render("{$template}.twig", $data);
+        return $this->blade->run($template, $data);
     }
 }
 
