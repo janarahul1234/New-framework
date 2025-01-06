@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>New Framework</title>
+    <title>Coffee Shop</title>
 </head>
 
 <body>
-    <h1>Welcome!!</h1>
+    <h1>Hello from home page!</h1>
 </body>
 
 </html>

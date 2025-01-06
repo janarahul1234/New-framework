@@ -17,8 +17,7 @@ function asset(string $filename): string
 
 function view(string $name, array $values = []): string
 {
-    $viewPath = str_replace('.', '/', $name);
-    return (new Core\View())->render($viewPath, $values);
+    return (new Core\View())->render($name, $values);
 }
 
 function response(): Core\Http\Response
