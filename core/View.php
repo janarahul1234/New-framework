@@ -15,6 +15,7 @@ class View
 
         $mode = env('APP_DEBUG', false) ? BladeOne::MODE_DEBUG : BladeOne::MODE_AUTO;
         $this->blade = new BladeOne($views, $cache, $mode);
+        $this->blade->setBaseUrl(env('APP_URL', 'http://localhost:8000'));
     }
 
     public function render(string $template, array $data = []): string
