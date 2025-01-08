@@ -50,3 +50,219 @@
 #9 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
 #10 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
 #11 {main}
+[2025-01-08 09:40:17] Error: Call to undefined method eftec\bladeone\BladeOne::withoutDoubleEncoding() in C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php on line 20
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(20): Core\View->__construct()
+#1 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#2 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#6 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#7 {main}
+[2025-01-08 09:40:18] Error: Call to undefined method eftec\bladeone\BladeOne::withoutDoubleEncoding() in C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php on line 20
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(20): Core\View->__construct()
+#1 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#2 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#6 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#7 {main}
+[2025-01-08 09:40:18] Error: Call to undefined method eftec\bladeone\BladeOne::withoutDoubleEncoding() in C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php on line 20
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(20): Core\View->__construct()
+#1 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#2 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#6 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#7 {main}
+[2025-01-08 09:40:19] Error: Call to undefined method eftec\bladeone\BladeOne::withoutDoubleEncoding() in C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php on line 20
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(20): Core\View->__construct()
+#1 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#2 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#6 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#7 {main}
+[2025-01-08 09:40:19] Error: Call to undefined method eftec\bladeone\BladeOne::withoutDoubleEncoding() in C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php on line 20
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(20): Core\View->__construct()
+#1 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#2 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#6 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#7 {main}
+[2025-01-08 09:45:47] Warning: Undefined array key 4 in C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php on line 2999
+[2025-01-08 09:45:47] Unknown Error: preg_replace_callback(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php on line 3005
+[2025-01-08 09:47:03] Warning: Undefined array key 4 in C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php on line 2999
+[2025-01-08 09:47:03] Unknown Error: preg_replace_callback(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php on line 3005
+[2025-01-08 09:47:03] Warning: Undefined array key 4 in C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php on line 2999
+[2025-01-08 09:47:03] Unknown Error: preg_replace_callback(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php on line 3005
+[2025-01-08 10:16:26] Error: Call to undefined function route() in C:\Users\janar\AppData\Local\Temp\pages.home_1337e770d5af64c7ac4b98c911528dc6ca046c65.bladec on line 24
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1622): include()
+#1 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1281): eftec\bladeone\BladeOne->evaluatePath('C:\\Users\\janar\\...', Array)
+#2 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(2181): eftec\bladeone\BladeOne->runInternal('pages.home', Array, true, false)
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php(27): eftec\bladeone\BladeOne->run('pages.home', Array)
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(15): Core\View->render('pages.home', Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#6 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#7 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#8 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#9 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#10 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#11 {main}
+[2025-01-08 10:16:35] Error: Call to undefined function route() in C:\Users\janar\AppData\Local\Temp\pages.home_1337e770d5af64c7ac4b98c911528dc6ca046c65.bladec on line 24
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1622): include()
+#1 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1281): eftec\bladeone\BladeOne->evaluatePath('C:\\Users\\janar\\...', Array)
+#2 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(2181): eftec\bladeone\BladeOne->runInternal('pages.home', Array, true, false)
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php(27): eftec\bladeone\BladeOne->run('pages.home', Array)
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(15): Core\View->render('pages.home', Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#6 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#7 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#8 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#9 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#10 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#11 {main}
+[2025-01-08 10:16:35] Error: Call to undefined function route() in C:\Users\janar\AppData\Local\Temp\pages.home_1337e770d5af64c7ac4b98c911528dc6ca046c65.bladec on line 24
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1622): include()
+#1 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1281): eftec\bladeone\BladeOne->evaluatePath('C:\\Users\\janar\\...', Array)
+#2 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(2181): eftec\bladeone\BladeOne->runInternal('pages.home', Array, true, false)
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php(27): eftec\bladeone\BladeOne->run('pages.home', Array)
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(15): Core\View->render('pages.home', Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#6 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#7 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#8 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#9 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#10 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#11 {main}
+[2025-01-08 10:16:35] Error: Call to undefined function route() in C:\Users\janar\AppData\Local\Temp\pages.home_1337e770d5af64c7ac4b98c911528dc6ca046c65.bladec on line 24
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1622): include()
+#1 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1281): eftec\bladeone\BladeOne->evaluatePath('C:\\Users\\janar\\...', Array)
+#2 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(2181): eftec\bladeone\BladeOne->runInternal('pages.home', Array, true, false)
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php(27): eftec\bladeone\BladeOne->run('pages.home', Array)
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(15): Core\View->render('pages.home', Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#6 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#7 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#8 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#9 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#10 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#11 {main}
+[2025-01-08 10:16:35] Error: Call to undefined function route() in C:\Users\janar\AppData\Local\Temp\pages.home_1337e770d5af64c7ac4b98c911528dc6ca046c65.bladec on line 24
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1622): include()
+#1 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1281): eftec\bladeone\BladeOne->evaluatePath('C:\\Users\\janar\\...', Array)
+#2 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(2181): eftec\bladeone\BladeOne->runInternal('pages.home', Array, true, false)
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php(27): eftec\bladeone\BladeOne->run('pages.home', Array)
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(15): Core\View->render('pages.home', Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#6 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#7 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#8 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#9 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#10 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#11 {main}
+[2025-01-08 10:16:35] Error: Call to undefined function route() in C:\Users\janar\AppData\Local\Temp\pages.home_1337e770d5af64c7ac4b98c911528dc6ca046c65.bladec on line 24
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1622): include()
+#1 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1281): eftec\bladeone\BladeOne->evaluatePath('C:\\Users\\janar\\...', Array)
+#2 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(2181): eftec\bladeone\BladeOne->runInternal('pages.home', Array, true, false)
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php(27): eftec\bladeone\BladeOne->run('pages.home', Array)
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(15): Core\View->render('pages.home', Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#6 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#7 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#8 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#9 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#10 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#11 {main}
+[2025-01-08 10:16:36] Error: Call to undefined function route() in C:\Users\janar\AppData\Local\Temp\pages.home_1337e770d5af64c7ac4b98c911528dc6ca046c65.bladec on line 24
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1622): include()
+#1 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1281): eftec\bladeone\BladeOne->evaluatePath('C:\\Users\\janar\\...', Array)
+#2 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(2181): eftec\bladeone\BladeOne->runInternal('pages.home', Array, true, false)
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php(27): eftec\bladeone\BladeOne->run('pages.home', Array)
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(15): Core\View->render('pages.home', Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#6 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#7 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#8 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#9 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#10 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#11 {main}
+[2025-01-08 10:16:36] Error: Call to undefined function route() in C:\Users\janar\AppData\Local\Temp\pages.home_1337e770d5af64c7ac4b98c911528dc6ca046c65.bladec on line 24
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1622): include()
+#1 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1281): eftec\bladeone\BladeOne->evaluatePath('C:\\Users\\janar\\...', Array)
+#2 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(2181): eftec\bladeone\BladeOne->runInternal('pages.home', Array, true, false)
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php(27): eftec\bladeone\BladeOne->run('pages.home', Array)
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(15): Core\View->render('pages.home', Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#6 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#7 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#8 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#9 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#10 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#11 {main}
+[2025-01-08 10:22:32] Warning: Undefined variable $expression in C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php on line 21
+[2025-01-08 10:22:32] Warning: Undefined variable $expression in C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php on line 21
+[2025-01-08 10:22:32] Warning: Undefined variable $expression in C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php on line 21
+[2025-01-08 10:24:55] TypeError: Only arrays and Traversables can be unpacked in C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php on line 21
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(3065): Core\View->Core\{closure}('('pages.home')')
+#1 [internal function]: eftec\bladeone\BladeOne->eftec\bladeone\{closure}(Array)
+#2 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(3085): preg_replace_callback('/\\B@(@?\\w+(?:::...', Object(Closure), '<?php  $this->s...')
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(835): eftec\bladeone\BladeOne->compileStatements('<?php  $this->s...')
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(789): eftec\bladeone\BladeOne->parseToken(Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1393): eftec\bladeone\BladeOne->compileString('<x-layout>\r\n   ...')
+#6 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1273): eftec\bladeone\BladeOne->compile('pages.home', true)
+#7 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(2181): eftec\bladeone\BladeOne->runInternal('pages.home', Array, true, false)
+#8 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php(28): eftec\bladeone\BladeOne->run('pages.home', Array)
+#9 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(15): Core\View->render('pages.home', Array)
+#10 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#11 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#12 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#13 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#14 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#15 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#16 {main}
+[2025-01-08 10:30:11] Error: Call to undefined function route() in C:\Users\janar\AppData\Local\Temp\pages.home_1337e770d5af64c7ac4b98c911528dc6ca046c65.bladec on line 24
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1622): include()
+#1 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1281): eftec\bladeone\BladeOne->evaluatePath('C:\\Users\\janar\\...', Array)
+#2 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(2181): eftec\bladeone\BladeOne->runInternal('pages.home', Array, true, false)
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php(30): eftec\bladeone\BladeOne->run('pages.home', Array)
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(15): Core\View->render('pages.home', Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#6 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#7 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#8 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#9 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#10 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#11 {main}
+[2025-01-08 10:30:11] Error: Call to undefined function route() in C:\Users\janar\AppData\Local\Temp\pages.home_1337e770d5af64c7ac4b98c911528dc6ca046c65.bladec on line 24
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1622): include()
+#1 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1281): eftec\bladeone\BladeOne->evaluatePath('C:\\Users\\janar\\...', Array)
+#2 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(2181): eftec\bladeone\BladeOne->runInternal('pages.home', Array, true, false)
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php(30): eftec\bladeone\BladeOne->run('pages.home', Array)
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(15): Core\View->render('pages.home', Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#6 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#7 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#8 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#9 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#10 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#11 {main}
+[2025-01-08 10:30:11] Error: Call to undefined function route() in C:\Users\janar\AppData\Local\Temp\pages.home_1337e770d5af64c7ac4b98c911528dc6ca046c65.bladec on line 24
+#0 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1622): include()
+#1 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(1281): eftec\bladeone\BladeOne->evaluatePath('C:\\Users\\janar\\...', Array)
+#2 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\vendor\eftec\bladeone\lib\BladeOne.php(2181): eftec\bladeone\BladeOne->runInternal('pages.home', Array, true, false)
+#3 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\View.php(30): eftec\bladeone\BladeOne->run('pages.home', Array)
+#4 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\functions.php(15): Core\View->render('pages.home', Array)
+#5 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\routes\web.php(6): view('pages.home')
+#6 [internal function]: Core\Framework->{closure}(Object(Core\Http\Request))
+#7 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(108): call_user_func(Object(Closure), Object(Core\Http\Request))
+#8 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Router.php(59): Core\Router->executeAction(Object(Closure), Array)
+#9 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\core\Framework.php(40): Core\Router->resolve()
+#10 C:\xampp\htdocs\Files\PHP_Projects\coffee-shop\public\index.php(21): Core\Framework->run()
+#11 {main}
+[2025-01-08 10:32:24] Warning: Array to string conversion in C:\Users\janar\AppData\Local\Temp\pages.home_1337e770d5af64c7ac4b98c911528dc6ca046c65.bladec on line 24

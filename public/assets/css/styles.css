@@ -330,28 +330,16 @@ img {
   color: var(--dark-color-800);
 }
 
-.btn--dark {
-  background-color: var(--dark-color-800);
-}
-
 .btn--dark:hover {
-  background-color: var(--white-color);
+  background-color: var(--dark-color-800);
 }
 
 .btn--dark .btn__icon {
   stroke: var(--white-color);
 }
 
-.btn--dark:hover .btn__icon {
-  stroke: var(--dark-color-900);
-}
-
 .btn--dark .btn__text {
   color: var(--white-color);
-}
-
-.btn--dark:hover .btn__text {
-  color: var(--dark-color-900);
 }
 
 .btn--light {
@@ -526,6 +514,9 @@ img {
 
 .footer__copy-link {
   color: var(--orange-color-600);
+}
+
+.footer__copy-link:hover {
   text-decoration: underline;
 }
 
@@ -590,7 +581,6 @@ img {
 
   .products__form > div {
     flex-direction: row;
-    column-gap: 0.5rem;
   }
 
   .products__form .form__group {

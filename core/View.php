@@ -15,12 +15,21 @@ class View
 
         $mode = env('APP_DEBUG', false) ? BladeOne::MODE_DEBUG : BladeOne::MODE_AUTO;
         $this->blade = new BladeOne($views, $cache, $mode);
+
         $this->blade->setBaseUrl(env('APP_URL', 'http://localhost:8000'));
+        $this->customFunctions();
     }
 
     public function render(string $template, array $data = []): string
     {
         return $this->blade->run($template, $data);
+    }
+
+    private function customFunctions(): void
+    {
+        $this->blade->directive('route', function ($args) {
+            return "<?php echo route({$args}); ?>";
+        });
     }
 }
 

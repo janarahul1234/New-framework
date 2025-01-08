@@ -98,7 +98,7 @@ class Route
         return self::$routes;
     }
 
-    public static function findByName(string $name): ?string
+    private static function findByName(string $name): ?string
     {
         foreach (self::$routes as $route) {
             if ($route['name'] === $name) {
@@ -106,6 +106,25 @@ class Route
             }
         }
         return null;
+    }
+
+    public static function generate(string $name, array $params = []): ?string
+    {
+        $path = self::findByName($name);
+
+        if (!$path) {
+            return null;
+        }
+
+        foreach ($params as $key => $value) {
+            $path = str_replace("{" . $key . "}", $value, $path);
+        }
+
+        if (preg_match('/\{.*?\}/', $path)) {
+            throw new \InvalidArgumentException("Missing parameters for route: {$name}");
+        }
+
+        return $path;
     }
 }
 

@@ -5,9 +5,9 @@ function env(string $key, mixed $default = null): mixed
     return $_ENV[$key] ?? $default;
 }
 
-function route(string $name): string
+function route(string $name, array $params = []): string
 {
-    return env('APP_URL') . Core\Route::findByName($name) ?? '';
+    return env('APP_URL') . Core\Route::generate($name, $params);
 }
 
 function asset(string $filename): string
